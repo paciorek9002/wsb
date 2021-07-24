@@ -30,3 +30,4 @@ Aplikacja zawiera makiety podstron, które miały być połączone z backendem. 
 
 1. Kliknąć prawym przyciskiem myszy.
 2. Przejść do widoku, który chcemy sprawdzić.
+3. W menu są zawarte najważniejsze widoki niedostępne z poziomu interface'u graficznego, każdy widok zawiera także osobne menu, odpowiednie dla swoich uprawnień.
