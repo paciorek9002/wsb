@@ -21,3 +21,12 @@ install npm
 ```bash
 start npm
 ```
+
+Aplikacja automatycznie zacznie korzystać z adresu: http://localhost:8080/
+
+## Jak obsługiwać aplikację?
+
+Aplikacja zawiera makiety podstron, które miały być połączone z backendem. W celu nawigacji po wszystkich możliwych widokach należy:
+
+1. Kliknąć prawym przyciskiem myszy.
+2. Przejść do widoku, który chcemy sprawdzić.
