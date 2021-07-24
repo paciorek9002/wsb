@@ -18,8 +18,6 @@ W terminalu przejdź do folderu projektu.
 install npm
 ```
 
-3.
-
 ```bash
 start npm
 ```
