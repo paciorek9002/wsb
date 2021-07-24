@@ -1,0 +1,217 @@
+// Import MDC Web components
+@use "@material/theme" with (
+    $primary: #fcb8ab,
+    $secondary: #feeae6,
+    $on-primary: #442b2d,
+    $on-secondary: #442b2d,
+    );
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/checkbox";
+@use "@material/form-field";
+@use "@material/button";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/drawer";
+@use "@material/list";
+@use "@material/card";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "@material/typography/mdc-typography";
+@import "@material/button/mdc-button";
+
+@include textfield.core-styles;
+@include checkbox.core-styles;
+@include form-field.core-styles;
+@include icon-button.core-styles;
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.deprecated-core-styles;
+@include card.core-styles;
+
+$primary: #fcb8ab;
+$secondary: #feeae6;
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url("https://yahu.pro/cdn/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  .menu-label {
+    margin: 12px auto;
+  }
+  .menu-week-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    .my-card__media {
+      background-image: url("https://yahu.pro/cdn/meal.jpg");
+    }
+    .mdc-card {
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 140px;
+      margin-right: 16px;
+      &__media {
+        background-image: url("https://yahu.pro/cdn/food.jpeg");
+      }
+      &__content {
+        color: rgba(56, 56, 56, 1);
+        padding: 12px;
+        span {
+          font-weight: 700;
+        }
+      }
+      &__media-content {
+        -webkit-text-stroke: 1px black;
+        color: $primary;
+        backdrop-filter: blur(4px);
+        font-size: 2em;
+        padding: 4px;
+      }
+    }
+    .menu-week-items {
+      display: flex;
+      overflow-x: scroll;
+    }
+  }
+}
+
+.main-content {
+  overflow: hidden;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// Only apply this style if below top app bar.
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+.mdc-list-item {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.reservation-paid {
+  color: rgba(66, 245, 138);
+}
+
+.reservation-unpaid {
+  color: rgba(252, 56, 56);
+}
+
+aside {
+  background-color: $secondary;
+}
+
+.title-container {
+  padding: 64px;
+  color: $secondary;
+  border-radius: 4px;
+  backdrop-filter: blur(24px);
+  max-width: 50%;
+  -webkit-box-shadow: 10px 8px 25px -2px rgba(56, 56, 56, 1);
+  -moz-box-shadow: 10px 8px 25px -2px rgba(56, 56, 56, 1);
+  box-shadow: 10px 8px 25px -2px rgba(56, 56, 56, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mdc-list-item {
+      height: 64px;
+      width: 640px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .buttons-container {
+    margin-top: 24px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    button {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+  form,
+  .wizard {
+    @include textfield.placeholder-color(rgba($primary, 0.7));
+    @include textfield.outline-color($primary);
+    @include textfield.hover-outline-color($primary);
+    @include textfield.caret-color($primary);
+    @include textfield.label-color($primary);
+    @include textfield.ink-color($primary);
+    display: flex;
+    flex-direction: column;
+    .mdc-text-field {
+      margin-top: 16px;
+    }
+    @include checkbox.container-colors(
+      $secondary,
+      $secondary,
+      $primary,
+      $primary,
+      true
+    );
+    .mdc-form-field {
+      color: $primary;
+      a {
+        color: $secondary !important;
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    padding: 32px;
+    min-width: 85%;
+    max-width: 85%;
+    .buttons-container {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-dashboard {
+    min-width: 85%;
+    max-height: 80%;
+  }
+}

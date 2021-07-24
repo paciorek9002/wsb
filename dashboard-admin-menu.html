@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stołówka - home</title>
+
+    <link rel="stylesheet" href="bundle.css">
+
+    <meta name="description" content="Stołówka - administracja menu">
+    <meta property="og:title" content="Stołówka - administracja menu">
+    <meta property="og:description" content="Administracja menu w aplikacji Stołówka App">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://mwp-english.pl/dashboard-admin-menu.html">
+    <link rel="canonical" href="https://mwp-english.pl/dashboard-admin-menu.html">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#FF00FF">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body id="home">
+
+    <script src="bundle.js" type="module"></script>
+
+    <div class="mdc-menu mdc-menu-surface">
+        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+          <a class="mdc-list-item" href="/" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Homepage</span>
+          </a>
+          <a class="mdc-list-item" href="/login.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Login</span>
+          </a>
+          <a class="mdc-list-item" href="/sign-up.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Register</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-admin-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Admin's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parent.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parent's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-students-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Child's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/update-user-profile.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Edit child's data</span>
+          </a>
+          <a class="mdc-list-item" href="/create-child.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Add a child</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parents-payments-reservations.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parents - payments and reservations</span>
+          </a>
+        </ul>
+    </div>
+
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Stołówka - panel administracyjny</span>
+            </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <a class="mdc-list-item" href="dashboard-admin-students.html" aria-current="page">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Uczniowie</span>
+                </a>
+                <a class="mdc-list-item" href="dashboard-admin-parents.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Rodzice</span>
+                </a>
+                <a class="mdc-list-item mdc-list-item--activated" href="dashboard-admin-menu.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Menu</span>
+                </a>
+                <a class="mdc-list-item" href="/">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Wyloguj</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+            <div class="title-container-wrapper">
+                <div class="title-container title-container-dashboard">
+                    <h1 class="title">
+                        Zarządzanie menu
+                    </h1>
+                    <div class="menu-wrapper">
+                        <div class="menu-week-row">
+                            <div class="menu-label">
+                                Tydzień 26.07-30.07
+                            </div>
+                            <div class="menu-week-items">
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Poniedziałek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Wtorek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Środa</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Czwartek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Piątek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-week-row">
+                            <div class="menu-label">
+                                Tydzień 02.08-06.08
+                            </div>
+                            <div class="menu-week-items">
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Poniedziałek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Wtorek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Środa</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Czwartek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                                <div class="mdc-card mdc-card--elevated">
+                                    <div class="mdc-card__primary-action" tabindex="0">
+                                        <!-- content within actionable area -->
+                                        <div class="my-card__media mdc-card__media mdc-card__media--16-9">
+                                            <div class="mdc-card__media-content">Piątek</div>
+                                        </div>
+                                        <div class="mdc-card__content">
+                                            <span>
+                                                ILOŚĆ REZRWACJI: 24
+                                            </span>
+                                            <ul>
+                                                <li>
+                                                    Kotlet
+                                                </li>
+                                                <li>
+                                                    Frytki
+                                                </li>
+                                                <li>
+                                                    Mizeria
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mdc-card__actions">
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Edit">edit</button>
+                                            <button
+                                                class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                                title="Preview">delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- ... content ... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stołówka - płatności i rezerwacje</title>
+
+    <link rel="stylesheet" href="bundle.css">
+
+    <meta name="description" content="Stołówka - płatności i rezerwacje">
+    <meta property="og:title" content="Stołówka - płatności i rezerwacje">
+    <meta property="og:description" content="Płatności i rezerwacje w aplikacji Stołówka App">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://mwp-english.pl/dashboard-parents-payments-reservations.html">
+    <link rel="canonical" href="https://mwp-english.pl/dashboard-parents-payments-reservations.html">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#FF00FF">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body id="home">
+
+    <script src="bundle.js" type="module"></script>
+
+    <div class="mdc-menu mdc-menu-surface">
+        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+          <a class="mdc-list-item" href="/" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Homepage</span>
+          </a>
+          <a class="mdc-list-item" href="/login.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Login</span>
+          </a>
+          <a class="mdc-list-item" href="/sign-up.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Register</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-admin-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Admin's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parent.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parent's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-students-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Child's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/update-user-profile.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Edit child's data</span>
+          </a>
+          <a class="mdc-list-item" href="/create-child.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Add a child</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parents-payments-reservations.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parents - payments and reservations</span>
+          </a>
+        </ul>
+    </div>
+
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Stołówka - panel rodzica</span>
+            </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <a class="mdc-list-item mdc- " href="dashboard-parent.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Menu</span>
+                </a>
+                <a class="mdc-list-item" href="dashboard-parents-children.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Zarządzanie dziećmi</span>
+                </a>
+                <a class="mdc-list-item mdc-list-item--activated" href="dashboard-parents-payments-reservations.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Płatności i rezerwacje</span>
+                </a>
+                <a class="mdc-list-item" href="/">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Wyloguj</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+            <div class="title-container-wrapper">
+                <div class="title-container title-container-dashboard">
+                    <h1 class="title">
+                        Płatności i rezerwacje
+                    </h1>
+                    <ul class="mdc-list">
+                        <li class="mdc-list-item reservation-paid" tabindex="0">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Agatka - tydzień 26.07 - 30.07</span>
+                            <div class="action-buttons">
+                                <button class="mdc-icon-button material-icons">delete</button>
+                            </div>
+                        </li>
+                        <li class="mdc-list-item reservation-unpaid" tabindex="0">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Agatka - tydzień 02.08 - 06.08</span>
+                            <div class="action-buttons">
+                                <button class="mdc-icon-button material-icons">delete</button>
+                            </div>
+                        </li>
+                        <li class="mdc-list-item reservation-paid" tabindex="0">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Tomcio - tydzień 26.07 - 30.07</span>
+                            <div class="action-buttons">
+                                <button class="mdc-icon-button material-icons">delete</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="buttons-container">
+                        <button class="mdc-button mdc-button--raised">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Nowa rezerwacja</span>
+                        </button>
+                        <button class="mdc-button mdc-button--outlined">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Zapłać zaległości</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

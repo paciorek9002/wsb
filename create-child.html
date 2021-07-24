@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stołówka - home</title>
+
+    <link rel="stylesheet" href="bundle.css">
+
+    <meta name="description" content="Stołówka - dodanie dziecka">
+    <meta property="og:title" content="Stołówka - dodanie dziecka">
+    <meta property="og:description" content="Dodanie dziecka w aplikacji Stołówka App">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://mwp-english.pl/create-child.html">
+    <link rel="canonical" href="https://mwp-english.pl/create-child.html">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#FF00FF">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body id="home">
+
+    <script src="bundle.js" type="module"></script>
+    <div class="mdc-menu mdc-menu-surface">
+        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+          <a class="mdc-list-item" href="/" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Homepage</span>
+          </a>
+          <a class="mdc-list-item" href="/login.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Login</span>
+          </a>
+          <a class="mdc-list-item" href="/sign-up.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Register</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-admin-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Admin's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parent.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parent's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-students-menu.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Child's dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="/update-user-profile.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Edit child's data</span>
+          </a>
+          <a class="mdc-list-item" href="/create-child.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Add a child</span>
+          </a>
+          <a class="mdc-list-item" href="/dashboard-parents-payments-reservations.html" role="menuitem">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Parents - payments and reservations</span>
+          </a>
+        </ul>
+    </div>
+
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Stołówka - Panel rodzica</span>
+            </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <a class="mdc-list-item" href="dashboard-parents-menu.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Menu</span>
+                </a>
+                <a class="mdc-list-item mdc-list-item--activated" href="dashboard-parents-children.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Moje dzieci</span>
+                </a>
+                <a class="mdc-list-item" href="/">
+                    <span class="mdc-list-item__ripple"></span>
+                    <span class="mdc-list-item__text">Wyloguj</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+            <div class="title-container-wrapper">
+                <div class="title-container title-container-dashboard">
+                    <h1 class="title">
+                        Dodaj dziecko
+                    </h1>
+                    <div class="wizard">
+                        <label class="mdc-text-field mdc-text-field--outlined">
+                            <span class="mdc-notched-outline">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" id="my-label-id">Imię</span>
+                                </span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                        </label>
+
+                        <label class="mdc-text-field mdc-text-field--outlined">
+                            <span class="mdc-notched-outline">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" id="my-label-id">Nazwisko</span>
+                                </span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                        </label>
+
+                        <label class="mdc-text-field mdc-text-field--outlined">
+                            <span class="mdc-notched-outline">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label" id="my-label-id">Adres e-mail</span>
+                                </span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                            <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                        </label>
+
+                        <br />
+                        Alergie, dodatkowe informacje: 
+
+                        <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label">
+                            <span class="mdc-notched-outline">
+                              <span class="mdc-notched-outline__leading"></span>
+                              <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                            <span class="">
+                              <textarea class="mdc-text-field__input" rows="8" cols="40" aria-label="Label"></textarea>
+                            </span>
+                          </label>
+
+                        <div class="buttons-container">
+                            <button class="mdc-button mdc-button--raised">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Zatwierdź</span>
+                            </button>
+                            <button class="mdc-button mdc-button--outlined">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Anuluj</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
